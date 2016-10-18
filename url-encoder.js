@@ -24,18 +24,21 @@ var encodeURL = function(){
 }
 
 var encodedURL_1 = encodeURL('this is great')
-console.assert(url1 === 'this%20is%20great')
+console.assert(encodedURL_1 === 'this%20is%20great')
 
 var encodedURL_2 = encodeURL('she said "there is no need for violence!"')
-console.assert(url2 === 'she%20said%20%22there%20is%20no%20need%20for%20violence%21%22')
+console.assert(encodedURL_2 === 'she%20said%20%22there%20is%20no%20need%20for%20violence%21%22')
 
 var encodedURL_3 = encodeURL("i'm all about the $")
-console.assert(url3 === "i%27m%20all%20about%20the%20%24")
+console.assert(encodedURL_3 === "i%27m%20all%20about%20the%20%24")
 
 
-
+//------------------------------------------
+// finish early? build a decodeURL() function!
 // decodeURL()
-// finish early? build a decodeURL function!
-// var decodeURL('i%27m%20all%20about%20the%20%24')
-// console.assert(url3 === "i'm all about the $")
 
+// var decoded_url = decodeURL('i%27m%20all%20about%20the%20%24')
+// console.assert(decoded_url === "i'm all about the $")
+
+// var decoded_url2 = decodeURL('she%20said%20%22there%20is%20no%20need%20for%20violence%21%22')
+// console.assert(decoded_url2 === 'she said "there is no need for violence!"')
